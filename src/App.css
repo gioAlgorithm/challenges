@@ -1,0 +1,113 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    justify-content: center;
+}
+.product{
+    border-radius: 12px 0px 0px 12px;
+}
+.product-mobile{
+    display: none;
+}
+.content{
+    background-color: white;
+    width: 375px;
+    height: 562.500px;
+    border-radius: 0px 12px 12px 0px;
+}
+.perfume{
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 40px;
+    margin-top: 40px;
+    color: hsl(228, 12%, 48%)
+}
+.name{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    margin-left: 40px;
+    color: hsl(212, 21%, 14%);
+}
+.text-container{
+    
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 35px;
+    margin-right: 60px;  
+    color: hsl(228, 12%, 48%); 
+}
+.text{
+    font-size: 16px;
+    word-spacing: 5px;
+    margin: 0;
+    padding: 4px;
+}
+
+.price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 40px;
+    
+}
+.price-full {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.last-price{
+    margin-left: 32px;
+    color: hsl(228, 12%, 48%); 
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-line: line-through;
+}
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 10px;
+    margin-left: 40px;
+    width: 280px;
+    height: 50px;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    word-spacing: 2px;
+
+}
+.btn span{
+    padding-left: 15px;
+}
+
+@media (orientation: portrait){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .product{
+        display: none;
+    }
+    .product-mobile{
+        display: flex;
+        flex-direction: row;
+        border-radius: 12px 12px 0px 0px;
+    }
+    .content{
+        background-color: white;
+        width: 375px;
+        height: 562.500px;
+        border-radius: 0px 0px 12px 12px;
+    }
+}
